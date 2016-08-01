@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css" media="screen" title="no title" charset="utf-8">
+    <title>Task List</title>
+  </head>
+  <body>
+    <div class="card">
+        <header>
+          <h1>My Todo List</h1>
+          <button class="btn" onclick="handlers.toggleAll()">Toggle All</button>
+          <input autofocus="autofocus" type="text" id="add-text" maxlength="80" placeholder="What do you want to get done?">
+        </header>
+
+        <ul>
+        </ul>
+
+        <footer>
+          <button class="btn" onclick="handlers.clearAll()" value="clear-tasks">Clear Completed</button>
+        </footer>
+
+    </div>
+
+
+    <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>
